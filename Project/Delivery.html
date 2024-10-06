@@ -1,0 +1,49 @@
+<html>
+<head>
+ <title>Delivery</title> 
+</head>
+  <link rel="stylesheet"href="delivery.css">
+  
+<body>
+    <h2>Customer Details</h2>
+
+    <div id="formContainer">
+        <label for="nameInput">Customer Name: </label>
+        <input type="text" id="nameInput" placeholder="Enter Name...">
+        <label for="emailInput"> Email ID:</label>
+        <input type="email" id="emailInput" placeholder="Enter Email...">
+        <label for="numberInput"> Mobile Number:</label>
+        <input type="text" id="numberInput" placeholder="Enter Mobile Details...">
+        <label for="food-name-input">Food Name:</label>
+        <input type="text" id="food-name-input" readonly><br><br>
+    
+        <label for="food-price-input">Food Price:</label>
+        <input type="text" id="food-price-input" readonly><br><br>
+        <label for="addressInput">Address:</label><br>
+        <textarea id="addressInput" placeholder="Enter Address..."></textarea>
+        <label for="locationInput">Location:</label><br>
+        <input type="text" id="locationInput" placeholder="Enter the location...">
+        <label for="pincodeInput">PinCode:</label>
+        <input type="text" id="pincodeInput" placeholder="Enter the pincode...">
+    
+        <br>
+        <button onclick="addData()">Add</button>
+        <button onclick="saveEdit()" style="display:none;" id="saveButton">Save</button>
+    </div>
+    
+    <table id="outputTable">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Mobile Details</th>
+            <th>Food Name</th>
+            <th>Price</th>
+            <th>Address</th>
+            <th>Location</th>
+            <th>PinCode</th>
+            <th>Action</th>
+        </tr>
+    </table>
+<script src="delivery.js"></script>
+
+</body>
